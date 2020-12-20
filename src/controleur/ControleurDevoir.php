@@ -10,7 +10,8 @@
             $this->devoir = new ModelDevoir();
         }
 
-        public function afficherDevoirs(){
+        public function afficherDevoirs()
+        {
             $devoirs = $this->devoir->select_tous_devoirs();
             $vueDevoirs = new Vue("Devoirs");
             $vueDevoirs->generer(array(
